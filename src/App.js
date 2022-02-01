@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import { CounterApp } from "./CounterApp";
+import { MouseApp } from "./MouseApp";
+import { TodoApp } from "./TodoApp";
+
+export function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1>mis hooks</h1>
+      <CounterApp ></CounterApp>  
+      <hr></hr>  
+      <TodoApp/>
+      <hr></hr>
+      <MouseApp></MouseApp>
+    </>
   );
 }
 
-export default App;
+/*
+
+*/
